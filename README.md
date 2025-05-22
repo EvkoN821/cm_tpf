@@ -15,5 +15,6 @@
 
 # Стек технологий
 ЯП: python
-библиотеки фреймворки: NumPy, pandas, whisper, librosa, parselmouth, nltk, sklearn, tetworkx, rouge,
+
+Библиотеки фреймворки: NumPy, pandas, whisper, librosa, parselmouth, nltk, sklearn, tetworkx, rouge,
 Huggingface
