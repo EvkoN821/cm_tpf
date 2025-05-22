@@ -1,0 +1,14 @@
+huggingface_hub==0.22.2
+gradio==3.35.2
+gradio_client==0.2.9
+numpy
+torch
+
+pydub
+scikit-learn
+nltk
+librosa
+praat-parselmouth
+networkx
+openai-whisper
+pandas
