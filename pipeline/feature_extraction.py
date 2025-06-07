@@ -5,7 +5,14 @@ import pandas as pd
 
 def extract_features(audio_path, sentences, word_timestamps, tfidf_scores, textrank_scores):
     """Функция F3: Извлечение признаков"""
-    y, sr, sound = preprocess_audio(audio_path)
+    try:
+        y, sr, sound = preprocess_audio(audio_path)
+    except FileNotFoundError:
+        print("Файл не найден!")
+    except ValueError as ve:
+        print(f"Ошибка в данных: {ve}")
+    except Exception as e:
+        print(f"Неизвестная ошибка: {e}")
     sentences_with_time = get_sentences_with_time(sentences, word_timestamps)
     
     pitch = sound.to_pitch()
