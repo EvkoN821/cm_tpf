@@ -3,8 +3,8 @@ import numpy as np
 from sklearn.preprocessing import RobustScaler
 
 DEFAULT_WEIGHTS = {
-    'tfidf': 0.3,
-    'textrank': 0.3,
+    'tfidf': 0.31,
+    'textrank': 0.29,
     'position': 0.05,
     'pitch': 0.12,
     'volume': 0.08,
@@ -12,7 +12,7 @@ DEFAULT_WEIGHTS = {
     'tempo': 0.1
 }
 
-def generate_summary(features_df, num_sentences=5, weights=DEFAULT_WEIGHTS):
+def generate_summary(features_df, num_sentences=7, weights=DEFAULT_WEIGHTS):
     """Функция F4: Формирование резюме"""
     # Нормализация признаков
     df_norm = normalize_features(features_df)
