@@ -9,7 +9,7 @@ def process_audio(file):
     """Обработка аудиофайла через интерфейс Gradio"""
     # Конвертация аудио
     audio = AudioSegment.from_wav(file)
-    temp_path = f"temp_audio_{randint(1, 10**8)}.wav"
+    temp_path = f"temp_audio_{randint(1, 10**9)}.wav"
     audio.export(temp_path, format="wav")
     
     # Выполнение пайплайна
